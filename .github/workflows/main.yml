@@ -22,8 +22,8 @@ jobs:
       run: "sudo mongo localhost:27017"
     - name: Create MongoDB Database and Collection
       run: |
-       mongo
-       exit
+       sudo mongo
+       sudo exit
     - name: Install Google Chrome
       run: |
        chmod +x ./scripts/InstallChrome.sh
