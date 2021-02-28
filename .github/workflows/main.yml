@@ -13,6 +13,22 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Create mongo Docker container
+      id: build_mongo_docker
+      uses: DigiPie/mongo-action@v1.0.1
+      with:
+        image-version: latest
+        port: 27017
+    - name: Test mongo connection
+      id: test_mongo_connection
+      run: "sudo mongo localhost:27017"
+    - name: Create MongoDB Database and Collection
+      run: |
+       mongo
+       show dbs
+       use seleniumdemo
+       db.users.insert({username: "moataz", password: "123456"})
+       exit
     - name: Install Google Chrome
       run: |
        chmod +x ./scripts/InstallChrome.sh

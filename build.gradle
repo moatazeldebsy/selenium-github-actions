@@ -15,10 +15,12 @@ dependencies {
     testCompile group: 'org.testng', name: 'testng', version: '7.1.0'
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     testCompile("io.github.bonigarcia:webdrivermanager:3.8.1")
+    implementation group: 'org.mongodb', name: 'mongo-java-driver', version: '3.12.8'
+
 
 }
 
-test { //this is the gradle task to be executed
-    useTestNG() { //Tells Gradle to use TestNG
+test {
+    useTestNG() {
     }
 }
