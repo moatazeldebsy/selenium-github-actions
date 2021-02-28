@@ -23,11 +23,7 @@ jobs:
       uses: supercharge/mongodb-github-action@1.3.0
       with:
         mongodb-version: ${{ matrix.mongodb-version }}
-    - name: Create MongoDB Database and Collection
-      run: |
-       use seleniumdemo
-       db.user.insert({username: "moataz", password: "123456"})
-       exit
+        run: use seleniumdemo
     - name: Install Google Chrome
       run: |
        chmod +x ./scripts/InstallChrome.sh
