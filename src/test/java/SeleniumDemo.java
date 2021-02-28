@@ -28,6 +28,7 @@ public class SeleniumDemo {
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
         driver.navigate().to("https://the-internet.herokuapp.com/login");
         driver.manage().window().maximize();
