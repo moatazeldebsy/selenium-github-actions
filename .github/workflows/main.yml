@@ -23,9 +23,6 @@ jobs:
     - name: Create MongoDB Database and Collection
       run: |
        mongo
-       show dbs
-       use seleniumdemo
-       db.users.insert({username: "moataz", password: "123456"})
        exit
     - name: Install Google Chrome
       run: |
