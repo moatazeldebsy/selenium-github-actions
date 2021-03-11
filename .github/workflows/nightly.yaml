@@ -1,4 +1,4 @@
-name: Selenium Java CI
+name: Nighlty CI
 on: 
   schedule:
     - cron: '* * * * *'
