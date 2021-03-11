@@ -1,5 +1,7 @@
 name: Selenium Java CI
-on: schedule: - cron: '0 * * * *'
+on: 
+  schedule:
+    - cron: '60 1 * * *'
 
 jobs:
   build:
