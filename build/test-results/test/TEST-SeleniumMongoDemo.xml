@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SeleniumMongoDemo" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-11T15:21:42" hostname="C02ZC55WLVDQ" time="0.531">
+  <properties/>
+  <testcase name="userLogin" classname="SeleniumMongoDemo" time="0.531"/>
+  <system-out><![CDATA[Current URL is:https://the-internet.herokuapp.com/secure
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
